@@ -70,6 +70,22 @@ User::create([
 php artisan db:seed
 ```
 
+### 8. Buat Link ke Storage
+Agar file yang di-upload dapat diakses, jalankan perintah berikut untuk membuat symbolic link:
+```bash
+php artisan storage:link
+```
+
+### 9. Jalankan Server Lokal
+Jalankan server lokal untuk melihat website:
+```bash
+php artisan serve
+```
+Website dapat diakses melalui URL:
+```arduino
+http://127.0.0.1:8000
+```
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
