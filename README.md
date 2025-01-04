@@ -48,6 +48,27 @@ Lakukan migrasi database dan jalankan seeder untuk mengisi data awal aplikasi:
 php artisan migrate --seed
 ```
 
+### 7. Menambahkan Akun Admin
+Seeder default hanya membuat akun pengguna (User). Anda dapat menambahkan akun admin dengan cara berikut:
+1. Buka file database/seeders/UserSeeder.php 
+2. Tambahkan kode berikut:
+
+```php
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+
+User::create([
+    'name' => 'Admin',
+    'email' => 'admin@example.com',
+    'password' => Hash::make('adminpassword'),
+    'role' => 'admin', // Pastikan kolom `role` tersedia dalam tabel `users`
+]);
+```
+
+3. Setelah menambahkan kode, jalankan ulang seeder:
+```bash
+php artisan db:seed
+```
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
