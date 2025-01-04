@@ -19,17 +19,35 @@ Clone repository ini ke direktori lokal Anda:
 git clone https://github.com/dzaky-santino/si-jaki.git
 ```
 
+### 2. Masuk Ke Folder si-jaki
 ```bash
 cd si-jaki
 ```
 
+### 3. Membuat File .env
+Copy file .env.example menjadi .env:
 ```bash
 cp .env.example .env
 ```
+Kemudian, sesuaikan konfigurasi database di file .env sesuai dengan pengaturan server lokal Anda.
 
+### 4. Instal Dependensi
+Jalankan perintah berikut untuk menginstal dependensi PHP menggunakan Composer:
 ```bash
 composer install
 ```
+
+### 5. Generate Application Key
+Generate application key Laravel untuk aplikasi Anda:
+```bash
+php artisan key:generate
+```
+### 6. Migrasi dan Seeder
+Lakukan migrasi database dan jalankan seeder untuk mengisi data awal aplikasi:
+```bash
+php artisan migrate --seed
+```
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
