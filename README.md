@@ -1,3 +1,36 @@
+# SI – JAKI
+
+**SI – JAKI** adalah singkatan dari _Sistem Informasi Jejak Pembinaan Perguruan Tinggi_. Website ini berfungsi untuk mencatat kegiatan jejak pembinaan pada setiap perguruan tinggi, seperti:
+- Rapat/audiensi
+- Visitasi
+- Monitoring & evaluasi
+- Aduan/laporan
+- Teguran/sanksi
+
+---
+
+## Cara Instalasi dan Penggunaan
+
+Berikut adalah langkah-langkah untuk menginstal dan menggunakan aplikasi ini:
+
+### 1. Clone Repository
+Clone repository ini ke direktori lokal Anda:
+```bash
+git clone https://github.com/dzaky-santino/si-jaki.git
+```
+
+```bash
+cd si-jaki
+```
+
+```bash
+cp .env.example .env
+```
+
+```bash
+composer install
+```
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
